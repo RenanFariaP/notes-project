@@ -16,9 +16,13 @@ export function App() {
       <div className=" h-px bg-slate-700" />
       <div className=" grid grid-cols-3 auto-rows-[250px] gap-6">
         <NewNoteCard />
-        <NoteCard />   
-        <NoteCard />   
-        <NoteCard />   
+        <NoteCard
+          note={{
+            id: 1,
+            date: new Date(),
+            content: "Hello World!",
+          }}
+        />
       </div>
     </div>
   );
